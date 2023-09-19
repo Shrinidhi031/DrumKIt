@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+    background-color: rgb(150, 59, 89);
+   }    
+
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+width: 1300px;
+justify-content: space-around;
+display: flex;
+margin: 150px auto;
+
+
+
+}
+
+
+.btn1{
+    width: 300px;
+    height: 280px;
+    padding-top:240px;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(123, 4, 28);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    background-image: url("DrumKits/drum.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn1:active{
+    background-size: 105%;
+}
+.btn2{
+    width: 300px;
+    height: 280px;
+    padding-top:220px;
+    font-size: 25px;
+    color: rgb(37, 2, 9);
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px wheat;
+    background-image: url("DrumKits/piano.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn2:active{
+    background-size: 105%;
+}
+.btn3{
+    width: 300px;
+    height: 280px;
+    padding-top:210px;
+    font-size: 25px;
+    color:blanchedalmond;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    background-image: url("DrumKits/Guitar.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn3:active{
+    background-size: 105%;
+}
+.btn4{
+    width: 300px;
+    height: 280px;
+    padding-top:210px;
+    font-size: 25px;
+    color: antiquewhite;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    background-image: url("DrumKits/Flute.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn4:active{
+    background-size: 105%;
+}
+    </style>
+</head>
+<body>
+    <h1>Musical Instruments</h1>
+    
+    <div class="container">
+        
+
+       
+<button id="drums" class="btn1">Drum</button>
+<button id="piano" class="btn2">Piano</button>
+<button id="guitar" class="btn3">Guitar</button>
+<button id="flute" class="btn4">Flute</button>
+
+    </div>
+
+</body>
+<script>
+const btn1=document.getElementById("drums")
+const btn2=document.getElementById("piano")
+const btn3=document.getElementById("guitar")
+const btn4=document.getElementById("flute")
+
+
+function drum(){
+  const audio1=new Audio("Audio/drum-roll-please-6386.mp3");
+  audio1.play()
+
+}
+drums.addEventListener("click",drum)
+
+
+function piano1(){
+    const audio2=new Audio("Audio/glad-piano-logo-13394.mp3");
+    audio2.play()
+  
+  }
+  piano.addEventListener("click",piano1)
+
+  function guitar1(){
+    const audio3=new Audio("Audio//acoustic-guitar-loop-f-91bpm-132687.mp3");
+    audio3.play()
+  
+  }
+  guitar.addEventListener("click",guitar1)
+
+  function flute1(){
+    const audio4=new Audio("Audio/flute-140576.mp3");
+    audio4.play()
+  
+  }
+  flute.addEventListener("click",flute1)
+
+
+</script>
+
+</html>
